@@ -5,7 +5,7 @@ export default defineConfig({
     srcDir: ".",
     title: "Lorelei",
 
-    base: '/', // change this to the correct base URL in the future
+    base: '/repo/', // https://vitepress.dev/guide/deploy#setting-a-public-base-path
 
     rewrites: {
         'en_US/:rest*': ':rest*' // make the English content as the root page
