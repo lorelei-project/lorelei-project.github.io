@@ -7,8 +7,8 @@ hero:
   text: "Cross-Architecture Compatibility Layer For Binary Translators."
   tagline: Run x86_64 Applications on New Architectures.
   image:
-    src: /common/logo.jpg
-    alt: VitePres
+    src: /logo.jpg
+    alt: Lorelei
   actions:
     - theme: brand
       text: Get Started

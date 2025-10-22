@@ -5,14 +5,14 @@ export default defineConfig({
     srcDir: ".",
     title: "Lorelei",
 
-    // base: '/', // change this to the correct base URL in the future
+    base: '/', // change this to the desired base URL in the future
 
     rewrites: {
         'en_US/:rest*': ':rest*' // make the English content as the root page
     },
 
     themeConfig: {
-        logo: '/common/logo.jpg',
+        logo: '/logo.jpg',
         socialLinks: [
             { icon: 'github', link: 'https://github.com/rover2024/lorelei' }
         ],
