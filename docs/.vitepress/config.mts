@@ -2,8 +2,11 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    srcDir: ".",
-    title: "Lorelei",
+    srcDir: '.',
+
+    title: 'Lorelei',
+    description: 'Cross-Architecture Compatibility Layer For Binary Translators.',
+    head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
 
     base: '/', // change this to the desired base URL in the future
 
