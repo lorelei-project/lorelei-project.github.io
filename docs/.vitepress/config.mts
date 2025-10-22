@@ -49,4 +49,12 @@ export default defineConfig({
             'lang': 'zh_CN'
         }
     },
+
+    vue: {
+        template: {
+            compilerOptions: {
+                isCustomElement: (tag) => tag === 'lite-youtube',
+            },
+        },
+    },
 })

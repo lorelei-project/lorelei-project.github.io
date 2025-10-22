@@ -40,3 +40,9 @@ The following x86_64 games are tested on Lorelei-patched `qemu-x86_64`.
 - World of Padman
 - Uebergame
 - Assault Cube
+
+## KVM Forum 2025
+
+Lorelei: Enable QEMU to leverage native shared libraries
+
+<lite-youtube videoid="_jioQFm7wyU" params="start=0" />
