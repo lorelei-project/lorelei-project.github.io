@@ -34,14 +34,15 @@ export default defineConfig({
                 text: 'Introduction',
                 items: [
                     { text: 'Lorelei Project', link: '/intro/lorelei-project' },
+                    { text: 'Getting Started', link: '/intro/getting-started' },
                     { text: 'Thunking System', link: '/intro/thunking-system' },
                 ]
             },
             {
                 text: 'Tools',
                 items: [
-                    { text: 'Thunk Library Compiler', link: '/intro/thunk-library-compiler' },
-                    { text: 'Host Library Rewriter', link: '/intro/host-library-rewriter' },
+                    { text: 'Thunk Library Compiler', link: '/tools/thunk-library-compiler' },
+                    { text: 'Host Library Rewriter', link: '/tools/host-library-rewriter' },
                 ]
             }
         ],

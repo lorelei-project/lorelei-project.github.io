@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Lorelei"
-  text: "Cross-Architecture Compatibility Layer For Emulators."
+  text: "Cross-Architecture Compatibility Layer for Emulators."
   tagline: Run x86_64 Applications on New Architectures.
   image:
     src: /logo.jpg
@@ -18,11 +18,10 @@ hero:
     #   link: /api-examples
 
 features:
-  - title: Host Libraries Pass-Through
-    details: Arming the binary translator with host libraries that are already available on the target architecture.
+  - title: Host Library Pass-Through
+    details: Enable the binary translator to directly leverage host libraries already available on the target architecture.
   - title: Automated Thunk Generation
-    details: Liberate the workforce of implementing a huge amount of conversion stubs manually.
+    details: Eliminate the need to manually implement large numbers of conversion stubs.
   - title: Multiple Emulator Support
-    details: Working as a DBT extension that can be applied to general DBTs, such as QEMU user emulator, Blink and Box64.
+    details: Works as a DBT extension that can be applied to general-purpose DBTs, such as QEMU-User, Blink, and Box64.
 ---
-

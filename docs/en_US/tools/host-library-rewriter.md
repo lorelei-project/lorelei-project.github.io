@@ -4,11 +4,11 @@ outline: deep
 
 # Host Library Rewriter (HLR)
 
-The **Host Library Rewriter (HLR)** injects check guards into the host library source code. The host library should be patched if [`TLC`](./thunk-library-compiler.md) failed to handle potential callbacks.
+The **Host Library Rewriter (HLR)** injects check guards into host library source code. A host library should be patched when [`TLC`](./thunk-library-compiler.md) cannot handle potential callbacks.
 
 ## TLC Limitations of Handling Function Pointers
 
-If the host library APIs involve potential function pointers that cannot be known at compile time, or returns host function pointers, [`TLC`](./thunk-library-compiler.md) cannot handle them.
+If host library APIs involve function pointers that cannot be determined at compile time, or if they return host function pointers, [`TLC`](./thunk-library-compiler.md) cannot handle them.
 
 ```c++
 using PFN_compare = int (*)(const void *, const void *);
@@ -37,7 +37,7 @@ struct S *func4();
 
 ## Conversion Code Interpolation
 
-The `HLR` detects expressions that invoke a function pointer or decay a function into a function pointer in the host library source code, and inserts a check guard before each call.
+`HLR` detects expressions that invoke function pointers or decay functions into function pointers in host library source code, and inserts check guards before those operations.
 
 ```c++
 typedef int (*PFN_compare)(const void *, const void *);
@@ -65,12 +65,12 @@ void some_api_2(A *a) {
 After patching, the code will be transformed into:
 ```c++
 void some_api_1(A *a) {
-    LORETHUNK_FPCALL(a->cmp)(x, y);
+    LORE_CCG_1(a->cmp)(x, y); // Lorelei call-check-guard 1
 }
 
 void some_api_2(A *a) {
-    a->cmp = LORETHUNK_FPASSIGN(my_compare);
+    a->cmp = LORE_FDG_1_1(my_compare); // Lorelei function-decay-guard 1-1
 }
 ```
 
-There will also be several prolog and epilog codes inserted at the beginning and end of the patched source file.
+It also inserts prologue and epilogue code at the beginning and end of the patched source file.

@@ -4,13 +4,13 @@ outline: deep
 
 # Lorelei Project
 
-User-level Dynamic binary translators (DBTs) cannot efficiently emulate libraries involving vector instructions and hardware drivers, such as OpenGL, Vulkan, and several high-performance computing libraries, thus facing performance challenges.
+User-level dynamic binary translators (DBTs) cannot efficiently emulate libraries that rely on vector instructions and hardware drivers, such as OpenGL, Vulkan, and many high-performance computing libraries. As a result, they often face performance bottlenecks.
 
-Lorelei is a heterogeneous execution compatibility layer for DBTs, focusing on adding host libraries pass-through support to existing DBTs. Lorelei is not a emulator but an extension or plugin for DBTs.
+Lorelei is a heterogeneous execution compatibility layer for DBTs, focused on adding host library pass-through support to existing DBTs. Lorelei is not an emulator, but an extension or plugin for DBTs.
 
-Lorelei can enable traditional full-emulation DBTs such as QEMU (User) and Blink to directly invoke host shared libraries, and also provide native-passthrough support of more libraries for Box64.
+Lorelei enables traditional full-emulation DBTs, such as QEMU-User to directly invoke host shared libraries. It also provides native pass-through support for additional libraries in Box64.
 
-Currently, the Lorelei-patched QEMU and Blink are also capable of running x86_64 games on ARM64 and RISC-V64 Linux systems.
+Currently, Lorelei-patched QEMU-User can run x86_64 games on ARM64 and RISC-V64 Linux systems.
 
 ## Supported Libraries
 
@@ -29,7 +29,7 @@ To be added...
 
 ## Compatible Games
 
-The following x86_64 games are tested on Lorelei-patched `qemu-x86_64`.
+The following x86_64 games have been tested on Lorelei-patched `qemu-x86_64`.
 
 - Hollow Knight
 - SuperTux
@@ -43,6 +43,6 @@ The following x86_64 games are tested on Lorelei-patched `qemu-x86_64`.
 
 ## KVM Forum 2025
 
-Lorelei: Enable QEMU to leverage native shared libraries
+Lorelei: Enable QEMU to Leverage Native Shared Libraries
 
 <lite-youtube videoid="_jioQFm7wyU" params="start=0" />
