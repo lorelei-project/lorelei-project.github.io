@@ -11,7 +11,7 @@ hero:
     alt: Lorelei
   actions:
     - theme: brand
-      text: Get Started
+      text: Introduction
       link: /intro/lorelei-project
     # - theme: alt
     #   text: API Examples

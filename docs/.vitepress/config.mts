@@ -26,7 +26,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Get Started', link: '/intro/lorelei-project' }
+            { text: 'Introduction', link: '/intro/lorelei-project' }
         ],
 
         sidebar: [
