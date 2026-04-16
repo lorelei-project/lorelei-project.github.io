@@ -5,7 +5,7 @@ export default defineConfig({
     srcDir: '.',
 
     title: 'Lorelei',
-    description: 'Cross-Architecture Compatibility Layer For Binary Translators.',
+    description: 'Cross-Architecture Compatibility Layer For Emulators.',
     head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
 
     base: '/', // change this to the desired base URL in the future
@@ -26,14 +26,22 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Get Started', link: '/intro/get-started' }
+            { text: 'Get Started', link: '/intro/lorelei-project' }
         ],
 
         sidebar: [
             {
                 text: 'Introduction',
                 items: [
-                    { text: 'Get Started', link: '/intro/get-started' },
+                    { text: 'Lorelei Project', link: '/intro/lorelei-project' },
+                    { text: 'Thunking System', link: '/intro/thunking-system' },
+                ]
+            },
+            {
+                text: 'Tools',
+                items: [
+                    { text: 'Thunk Library Compiler', link: '/intro/thunk-library-compiler' },
+                    { text: 'Host Library Rewriter', link: '/intro/host-library-rewriter' },
                 ]
             }
         ],

@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Lorelei"
-  text: "Cross-Architecture Compatibility Layer For Binary Translators."
+  text: "Cross-Architecture Compatibility Layer For Emulators."
   tagline: Run x86_64 Applications on New Architectures.
   image:
     src: /logo.jpg
@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /intro/get-started
+      link: /intro/lorelei-project
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
